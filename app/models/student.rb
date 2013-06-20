@@ -8,7 +8,7 @@ class Student < ActiveRecord::Base
   validates_format_of :phone, :with => /\(?\d{3}\)?-?\s?\d{3}\-\d{4}/
 
   def name 
-    self.first_name + " " + self.last_name 
+    first_name + " " + last_name 
   end
 
   def age
